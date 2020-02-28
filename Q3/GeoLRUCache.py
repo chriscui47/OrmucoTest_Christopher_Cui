@@ -74,6 +74,7 @@ class GeoLRUCache:
         prev.next=next
         next.prev=prev
     def timeout(self,node):
+        #if the node is not the head, we delete it
         if node.prev==self.head and (node==self.head or node==self.tail):
             self.head.next=self.tail
             self.tail.prev=self.head
