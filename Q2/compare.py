@@ -22,6 +22,7 @@ def compare(ver1,ver2):
 
     ver1Split=ver1.split(".")
     ver2Split=ver2.split(".")
+    #find longest one
     if len(ver1Split)<len(ver2Split):
         shortest=ver1Split
         longest=ver2Split
@@ -33,12 +34,15 @@ def compare(ver1,ver2):
         shortest=ver2Split
         longest=ver1Split
     
-    #we iterate thru shortest version. 
+    #we iterate thru longest
   
     for i in range(len(longest)):
+        # if shortest is reached after longest, set it to 0
         
         v1=int(shortest[i]) if i<len(shortest) else 0
+        #compare each number
         v2=int(longest[i])
+        #if greater number found, break
         if v2>v1:
             return "{} is GREATER than {}".format(".".join(longest),".".join(shortest))
         if v2<v1:
@@ -51,5 +55,4 @@ def compare(ver1,ver2):
  
  
             
-print(compare("41.4123211.2","4.4.1"))
         
