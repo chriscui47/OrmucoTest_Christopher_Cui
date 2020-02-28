@@ -41,17 +41,6 @@ class TestCompare(unittest.TestCase):
     def test_invalid_input(self):
         # ------- INVALID VERSION 1 --------
 
-          #accepted input types are:
-# 21.51
-# 3.4.5672
-# 3.4.567.001
-#2
-# But will not find
-
-
-# 1.
-# .47
-
         # Cannot have . with no subsequent number
         version1 = "3.3.3"
         version2 = "2."
