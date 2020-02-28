@@ -1,5 +1,9 @@
 # Ormuco_test_ChristopherCui
 
+# NOTES:
+For Q3: Expiration was implemented using time() as well as removal of least recently used. The cache data structure was implemented using a doubly linked list as well as a dictionary to keep track of node keys.
+However, I was unable to implement GeoLocation.
+
 Question A
 Your goal for this question is to write a program that accepts two lines (x1,x2) and (x3,x4) on the x-axis and returns whether they overlap. As an example, (1,5) and (2,6) overlaps but not (1,5) and (6,8).
  
@@ -17,10 +21,4 @@ At Ormuco, we want to optimize every bits of software we write. Your goal is to 
     5 - Locality of reference, data should almost always be available from the closest region
     6 - Flexible Schema
     7 - Cache can expire 
-
-As a hint, we are not looking for quantity, but rather quality, maintainability, scalability, testability and a code that you can be proud of. 
-When submitting your code add the necessary documentation to explain your overall design and missing functionalities.  Do it to the best of your knowledge.
- 
-Good Luck, you can write it in the language of your choice, name the test using the convention firstname_lastname_test and provide a link in your personal github so we can review the work.
- 
-
+\
